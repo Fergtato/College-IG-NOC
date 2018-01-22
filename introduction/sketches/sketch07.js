@@ -1,5 +1,3 @@
-var walker;
-
 function setup() {
 	createCanvas(640,360);
 	background(127);
