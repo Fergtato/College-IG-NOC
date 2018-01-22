@@ -23,17 +23,21 @@ function Walker() {
 
 	this.step = function() {
 
-		var probArray = [];
-		probArray[1] = 1;
-		probArray[2] = 1;
-		probArray[3] = 2;
-		probArray[4] = 3;
-		probArray[5] = 3;
+		var choice = floor(random(4));
+		var r = random(1);
 
-		var index = floor(random(probArray.length));
-		var r = probArray[index];
+		if (r < 0.4) {
+			this.x++;
+		} else if (r < 0.6) {
+			this.x--;
+		} else if (r < 0.8) {
+			this.y++;
+		} else {
+			this.y--;
+		}
 
-		this.x = constrain(this.x,0,width - 1);
-		this.y = constrain(this.y,0,height - 1);
+
+		this.x = constrain(this.x,0,width);
+		this.y = constrain(this.y,0,height);
 	}
 }
