@@ -9,9 +9,10 @@ function draw() {
 	for (var y = 0; y < height; y++) {
 		for (var x = 0; x < width; x++) {
 			var index = (x + y * width) * 4;
-			pixels[index + 0] = x;
-			pixels[index + 1] = 0;
-			pixels[index + 2] = y;
+			var bright = random(255);
+			pixels[index + 0] = bright;
+			pixels[index + 1] = bright;
+			pixels[index + 2] = bright;
 			pixels[index + 3] = 255;
 		}
 	}
