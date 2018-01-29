@@ -5,7 +5,7 @@ We start off with the setup() and draw() methods for P5.
 
 The setup method is run once at the start of the program to set things up like creating the canvas, setting a background colour and creating instances of an object.
 
-```
+```js
 function setup() {
 	createCanvas(320,640);
 	background(127);
@@ -15,7 +15,7 @@ function setup() {
 
 The draw method is run on a loop, redrawing the canvas each time it is run. Tn this file we are using it to run the Walker methods called 'render' and 'step'.
 
-```
+```js
 function draw() {
 	walker.render();
 	walker.step();
@@ -26,14 +26,14 @@ function draw() {
 
 In the walker class we first define some variables such as its starting x and y locations.
 
-```
+```js
 this.x = width/2;
 this.y = height/2;
 ```
 
 After this we have the render method which re-draws the walker at it's current location as a point.
 
-```
+```js
 this.render = function() {
 	stroke(0);
 	point(this.x, this.y);
@@ -42,7 +42,7 @@ this.render = function() {
 
 Then we have the step method. We first choose a random number between 0 and 4 and round it up using the floor() function. Then using this number we can then move the walker up down left or right. We also constrain the x and y values to keep it within the canvas.
 
-```
+```js
 this.step = function() {
 
 	var choice = floor(random(4));
