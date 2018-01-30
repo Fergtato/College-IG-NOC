@@ -1,16 +1,16 @@
-# The Nature of Code - P5
+# The Nature of Code - P5 - Fergus O'Hagan
 
 
 This wil be my online repository of all the files I've create from the book.
 
 
-## Chapters to be covered
+## Chapters
 1. [Introduction - Randomness, Perlin Noise, Probability](introduction/)
-2. Vectors and Motion
+2. [Vectors and Motion](vectors/)
 3. Forces
 4. Particle Systems
 
-## Some standard GIT command
+## Setup
 You can clone a repository. This means a copy of yours or someone elses. If the respoitory is your own just use the command
 ```
 git clone https://github.com/Fergtato/College-IG-NOC.git
