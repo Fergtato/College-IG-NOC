@@ -47,3 +47,18 @@ We then increment the x and y positions of the walker by the rx and ry values an
 	}
 }
 ```
+
+We then create a new walker using the Walker class in the setup() and call its render and step methods in the draw()
+
+```js
+function setup() {
+	createCanvas(320,640);
+	background(127);
+	walker = new Walker();
+}
+
+function draw() {
+	walker.render();
+	walker.step();
+}
+```
