@@ -25,13 +25,18 @@ function Walker() {
 
 		var probArray = [];
 		probArray[1] = 1;
-		probArray[2] = 1;
-		probArray[3] = 2;
-		probArray[4] = 3;
-		probArray[5] = 3;
+		probArray[2] = -1;
+		probArray[3] = 1;
+		probArray[4] = -1;
+		probArray[0] = -1;
 
-		var index = floor(random(probArray.length));
-		var r = probArray[index];
+		var indexX = floor(random(probArray.length));
+		var indexY = floor(random(probArray.length));
+		var rx = probArray[indexX];
+		var ry = probArray[indexY];
+
+		this.x += rx;
+		this.y += ry;
 
 		this.x = constrain(this.x,0,width - 1);
 		this.y = constrain(this.y,0,height - 1);

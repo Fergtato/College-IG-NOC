@@ -21,7 +21,7 @@ $ git remote set-url origin https://github.com/Fergtato/College-IG-NOC.git
 ```
 Then make a push
 ```
-git push -u origin master
+git push
 ```
 If you are working on your Repository from another machine then before you start make sure to type the following to pull the latest version to your machine
 ```
