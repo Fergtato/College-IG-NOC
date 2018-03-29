@@ -1,4 +1,4 @@
-## Introducing Vectors
+# Introducing Vectors
 
 Moving a mover at a defined speed using vectors.
 

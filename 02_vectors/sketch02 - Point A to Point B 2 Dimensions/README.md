@@ -1,4 +1,4 @@
-## Point A to Point B in 2 Dimensions
+# Point A to Point B in 2 Dimensions
 
 Moving a mover in 2 dimensions at a defined speed.
 
