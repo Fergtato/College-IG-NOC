@@ -10,8 +10,8 @@ function setup() {
 function draw() {
 	background(51);
 
-	position.x = position.x + velocity.x;
-	position.y = position.y + velocity.y;
+	position.x += velocity.x;
+	position.y += velocity.y;
 
 	if ((position.x > width) || (position.x < 0)) {
 		velocity.x = velocity.x * -1;
