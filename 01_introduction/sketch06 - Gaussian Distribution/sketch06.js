@@ -1,5 +1,3 @@
-var walker;
-
 function setup() {
 	createCanvas(640,360);
 	background(127);
@@ -8,7 +6,6 @@ function setup() {
 function draw() {
 	
 	var xloc = randomGaussian();
-	console.log(xloc);
 
 	var sd = 60;
 	var mean = width / 2;
