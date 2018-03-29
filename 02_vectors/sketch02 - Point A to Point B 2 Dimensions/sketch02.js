@@ -1,7 +1,7 @@
 var x = 100;
 var y = 100;
- var xspeed = 2.5;
- var yspeed = 2;
+var xspeed = 2.5;
+var yspeed = 2;
 
  function setup() {
  	createCanvas(640, 360);
