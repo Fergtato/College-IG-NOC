@@ -1,5 +1,4 @@
 var x = 320;
-var y = 180;
 var xspeed = 2;
 
 function setup() {

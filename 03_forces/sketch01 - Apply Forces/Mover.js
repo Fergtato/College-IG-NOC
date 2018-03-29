@@ -1,15 +1,10 @@
 function Mover() {
 
-	this.location = createVector(floor(random(width)), floor(random(height)));
-	this.velocity = createVector(3, 3);
-	this.acceleration = createVector();
+	this.location = createVector(30,30);
+	this.velocity = createVector(3,0);
+	this.acceleration = createVector(0,0);
 
 	this.update = function() {
-		var mouse = createVector(mouseX, mouseY);
-
-		this.acceleration = p5.Vector.sub(mouse, this.location);
-		this.acceleration.setMag(0.2);
-
 		this.velocity.add(this.acceleration);
 		this.velocity.limit(10);
 		this.location.add(this.velocity);
@@ -30,4 +25,9 @@ function Mover() {
 			this.velocity.y = this.velocity.y * -1;
 		}
 	}
+
+	this.applyForce = function(force) {
+		this.acceleration = force;
+	}
+
 }
