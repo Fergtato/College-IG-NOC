@@ -1,4 +1,15 @@
-var walker;
+# One Dimensional Noise (Walker boy made some friends)
+
+In this file we expend on the previous sketch making multiple walkers go in both the x and y dimensions.
+
+## The Code
+
+Instead of making only one walker we now create an array of walkers.  
+Initialise the variables for the array and the number of walkers in the array. Then in the setup function declare the array and the number of walkers.  
+A for loop creates a new walker using the Walker class for the amount defined in noOfWalkers.
+
+```js
+var walkers;
 var noOfWalkers;
 
 function setup() {
@@ -10,7 +21,11 @@ function setup() {
 	}
 	background(127);
 }
+```
 
+In the draw funtion we run the tep and render methods for each walker in the array.
+
+```js
 function draw() {
 	fill(0, 15);
 	rect(0, 0, width, height);
@@ -20,7 +35,13 @@ function draw() {
 		walkers[i].render();
 	}
 }
+```
 
+### The Walker
+
+Similar to the previous sketch we create a starting position and an xOff but for each dimension so we use vectors which store two values (Vectors will be discussed in the next chapter).
+
+```js
 function Walker() {
 
 	this.position = createVector(width / 2, height / 2);
@@ -39,3 +60,4 @@ function Walker() {
 		this.noff.add(0.005, 0.005);
 	}
 }
+```
