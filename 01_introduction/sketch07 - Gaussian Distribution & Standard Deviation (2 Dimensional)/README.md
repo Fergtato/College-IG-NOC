@@ -2,7 +2,7 @@
 
 In this file we are creating a second dimension to the gaussian distribution on the y axis.
 
-## The Code
+## The Code
 
 In the draw function a yloc is declared as well as the xloc.  
 We also create seperate standard deviation and means for the x and y axis.
