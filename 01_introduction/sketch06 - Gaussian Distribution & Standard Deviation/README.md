@@ -1,4 +1,4 @@
-# Gaussian Distribution
+# Gaussian Distribution & Standard Deviation
 
 An example of gaussian distribution and standard distribution
 
