@@ -1,4 +1,4 @@
-# Uniform Distribution of Numbers
+# Uniform Distribution of Numbers 1
 
 In this file we are showing how the built in random() function isn't true randomness. We show this by creating 20 bars and picking at 'random' which one to increase the height of by one pixel.
 

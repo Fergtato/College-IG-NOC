@@ -23,7 +23,6 @@ function Walker() {
 
 	this.step = function() {
 
-		var choice = floor(random(4));
 		var r = random(1);
 
 		if (r < 0.4) {

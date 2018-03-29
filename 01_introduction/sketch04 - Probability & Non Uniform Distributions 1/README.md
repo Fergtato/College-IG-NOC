@@ -1,4 +1,4 @@
-# Probability & Non Uniform Distributions
+# Probability & Non Uniform Distributions 1
 
 In this file we introduce the 'Walker' class. This acts as a so called blueprint for a walker or a 'wlaker maker' and allows us to create multiple walkers without having to write code to create each one in the draw() method.
 
