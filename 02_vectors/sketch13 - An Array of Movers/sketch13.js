@@ -1,19 +1,17 @@
 var movers = [];
 
 function setup() {
-	createCanvas(640,480);
-	for(var i = 0; i < 20; i++) {
+	createCanvas(640, 360);
+	for (var i = 0; i < 20; i++) {
 		movers[i] = new Mover();
 	}
-	
 }
 
 function draw() {
-	background('#2d2d2d');
+	background(51);
 
-	for(var i = 0; i < 20; i++) {
+	for (var i = 0; i < movers.length; i++) {
 		movers[i].update();
 		movers[i].display();
 	}
-
 }
