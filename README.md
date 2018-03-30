@@ -5,10 +5,10 @@ This wil be my online repository of all the files I've create from the book.
 
 
 ## Chapters
-1. [Introduction - Randomness, Perlin Noise, Probability](introduction/)
-2. [Vectors and Motion](vectors/)
-3. Forces
-4. Particle Systems
+1. [Introduction - Randomness, Perlin Noise, Probability](01_introduction/)
+2. [Vectors and Motion](02_vectors/)
+3. [Forces](03_forces/)
+4. [Oscillation](04_oscillation/)
 
 ## Setup
 You can clone a repository. This means a copy of yours or someone elses. If the respoitory is your own just use the command
