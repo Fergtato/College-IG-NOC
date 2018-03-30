@@ -30,5 +30,6 @@ Add acceleration to velocity and velocity to loction as usual.
 	this.velocity.limit(10);
 	this.location.add(this.velocity);
 }
+```
 
 The mover will accelerate in the direction of the mouse.
