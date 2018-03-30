@@ -1,14 +1,14 @@
 var mover;
 
 function setup() {
-  createCanvas(640, 360);
-  mover = new Mover();
+	createCanvas(640, 360);
+	mover = new Mover();
 }
 
 function draw() {
-  background(50);
-  
-  mover.update();
-  mover.checkEdges();
-  mover.display();
+	background(255);
+
+	mover.update();
+	mover.checkEdges();
+	mover.display();
 }

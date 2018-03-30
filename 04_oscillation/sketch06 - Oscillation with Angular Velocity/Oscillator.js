@@ -15,9 +15,9 @@ function Oscillator() {
 
         push();
             translate(width / 2, height / 2);
-            stroke(255);
-            strokeWeight(2);
-            fill(127, 127);
+            stroke(0);
+            strokeWeight(3);
+            fill('#ff0244');
             line(0, 0, x, y);
             ellipse(x, y, 32, 32);
         pop();

@@ -26,14 +26,14 @@ function Mover() {
 
         stroke(0);
         strokeWeight(2);
-        fill(127);
+        fill('#ff0244');
+
         push();
-        rectMode(CENTER);
+            rectMode(CENTER);
 
-        translate(this.position.x, this.position.y);
-        rotate(angle);
-        rect(0, 0, 30, 10);
-
+            translate(this.position.x, this.position.y);
+            rotate(angle);
+            rect(0, 0, 30, 10);
         pop();
     }
 

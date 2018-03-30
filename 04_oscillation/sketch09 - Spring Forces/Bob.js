@@ -4,14 +4,10 @@ function Bob(x, y) {
     this.velocity = createVector();
     this.acceleration = createVector();
     this.mass = 24;
-    // Arbitrary damping to simulate friction / drag
     this.damping = 0.98;
-    // For user interaction
     this.dragOffset = createVector();
     this.dragging = false;
 
-
-    // Standard Euler integration
     this.update = function() {
         this.velocity.add(this.acceleration);
         this.velocity.mult(this.damping);
@@ -19,21 +15,19 @@ function Bob(x, y) {
         this.acceleration.mult(0);
     }
 
-    // Newton's law: F = M * A
     this.applyForce = function(force) {
         var f = force.copy();
         f.div(this.mass);
         this.acceleration.add(f);
     }
 
-    // Draw the bob
     this.display = function() {
-        stroke(255);
-        strokeWeight(2);
-        fill(127);
+        stroke(0);
+        strokeWeight(3);
+        fill('#ff0244');
 
         if (this.dragging) {
-            fill(200);
+            fill('#ff4979');
         }
 
         ellipse(this.position.x, this.position.y, this.mass * 2, this.mass * 2);

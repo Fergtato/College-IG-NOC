@@ -25,7 +25,7 @@ function Mover(m, x, y) {
 
     this.display = function() {
         stroke(0);
-        fill(175, 200);
+        fill('#ff0244');
         rectMode(CENTER);
         push();
         translate(this.position.x, this.position.y);

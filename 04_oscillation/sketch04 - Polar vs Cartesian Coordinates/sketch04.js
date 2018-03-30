@@ -2,30 +2,26 @@ var r;
 var theta;
 
 function setup() {
-  createCanvas(640, 360);
-  // Initialize all values
-  r = height * 0.45;
-  theta = 0;
+    createCanvas(640, 360);
+
+    r = height * 0.45;
+    theta = 0;
 }
 
 function draw() {
-  background(51);
+    background(255);
 
-  // Translate the origin point to the center of the screen
-  translate(width / 2, height / 2);
+    translate(width / 2, height / 2);
 
-  // Convert polar to cartesian
-  var x = r * cos(theta);
-  var y = r * sin(theta);
+    var x = r * cos(theta);
+    var y = r * sin(theta);
 
-  // Draw the ellipse at the cartesian coordinate
-  ellipseMode(CENTER);
-  fill(127);
-  stroke(255);
-  strokeWeight(2);
-  line(0, 0, x, y);
-  ellipse(x, y, 48, 48);
+    ellipseMode(CENTER);
+    fill('#ff0244');
+    stroke(0);
+    strokeWeight(3);
+    line(0, 0, x, y);
+    ellipse(x, y, 30, 30);
 
-  // Increase the angle over time
-  theta += 0.02;
+    theta += 0.02;
 }

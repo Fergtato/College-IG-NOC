@@ -15,7 +15,7 @@ function setup() {
 
 
 function draw() {
-    background(51);
+    background(255);
 
     // Apply a gravity force to the bob
     var gravity = createVector(0, 2);

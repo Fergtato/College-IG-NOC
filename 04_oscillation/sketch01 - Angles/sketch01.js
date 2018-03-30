@@ -3,23 +3,23 @@ var aVelocity = 0;
 var aAcceleration = 0.0001;
 
 function setup() {
-  createCanvas(640, 360);
+    createCanvas(640, 360);
 }
 
 function draw() {
-  background(220);
+    background(255);
 
-  translate(width/2, height/2);
-  rotate(angle);
+    translate(width/2, height/2);
+    rotate(angle);
 
-  stroke(0);
-  strokeWeight(2);
-  fill(127);
+    stroke(0);
+    strokeWeight(2);
+    fill(127);
 
-  line(-60, 0, 60, 0);
-  ellipse(60, 0, 16, 16);
-  ellipse(-60, 0, 16, 16);
+    line(-60, 0, 60, 0);
+    ellipse(60, 0, 16, 16);
+    ellipse(-60, 0, 16, 16);
 
-  angle += aVelocity;
-  aVelocity += aAcceleration;
+    angle += aVelocity;
+    aVelocity += aAcceleration;
 }
