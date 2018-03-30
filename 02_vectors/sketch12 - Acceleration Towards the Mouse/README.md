@@ -12,15 +12,15 @@ In the mover's update() method first declare the mouse loction vector.
 
 ```js
 this.update = function() {
-		var mouse = createVector(mouseX, mouseY);
+	var mouse = createVector(mouseX, mouseY);
 ```
 
 Set the acceleration to the subtraction of the mover's location from the mouse location. This gets the direction of acceleration. Normalize the vector and multiply it to give it magnitude.
 
 ```js
-		this.acceleration = p5.Vector.sub(mouse, this.location);
-		this.acceleration.normalize();
-		this.acceleration.mult(0.8);
+	this.acceleration = p5.Vector.sub(mouse, this.location);
+	this.acceleration.normalize();
+	this.acceleration.mult(0.8);
 ```
 
 Add acceleration to velocity and velocity to loction as usual.
