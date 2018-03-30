@@ -1,6 +1,6 @@
 function Mover(m) {
 
-	this.location = createVector(30,30);
+	this.location = createVector(Math.floor(random(0, width)),Math.floor(random(0, 200)));
 	this.velocity = createVector(0,0);
 	this.acceleration = createVector(0,0);
 	this.mass = m;
@@ -13,7 +13,7 @@ function Mover(m) {
 	}
 
 	this.display = function() {
-		fill(255,0,0,50);
+		fill(255,0,0,90);
 		noStroke();
 
 		ellipse(this.location.x, this.location.y, this.mass * 10, this.mass * 10);

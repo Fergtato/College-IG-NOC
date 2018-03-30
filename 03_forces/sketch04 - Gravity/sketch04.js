@@ -2,7 +2,7 @@ var movers = [];
 
 function setup() {
 	createCanvas(640, 640);
-	for (var i = 0; i < 20; i++) {
+	for (var i = 0; i < 10; i++) {
 		movers[i] = new Mover(Math.floor(random(5, 20)));
 	}
 }
@@ -10,7 +10,7 @@ function setup() {
 function draw() {
 	background(51);
 
-	for (var i = 0; i < 20; i++) {
+	for (var i = 0; i < 10; i++) {
 		var m = movers[i].mass;
 
 		var wind = createVector(0.1, 0);
