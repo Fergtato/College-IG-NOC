@@ -8,7 +8,8 @@ function Mover() {
 		var mouse = createVector(mouseX, mouseY);
 
 		this.acceleration = p5.Vector.sub(mouse, this.location);
-		this.acceleration.mult(0.2);
+		this.acceleration.normalize();
+		this.acceleration.mult(0.8);
 
 		this.velocity.add(this.acceleration);
 		this.velocity.limit(10);
