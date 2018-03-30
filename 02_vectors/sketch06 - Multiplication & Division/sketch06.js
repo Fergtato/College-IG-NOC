@@ -8,7 +8,9 @@ function draw() {
 	var mouse = createVector(mouseX, mouseY);
 	var center = createVector(width/2, height/2);
 	var vectorLine = mouse.sub(center);
-	vectorLine.mult(0.5);
+
+	// vectorLine.mult(2);
+	vectorLine.div(2);
 
 	translate(width /2, height /2);
 	strokeWeight(2);
