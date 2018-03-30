@@ -2,7 +2,7 @@
 
 Calculating and applying an external friction force to the mover to slow it down over time.
 
-## The Code  
+## The Code
 
 ### sketch.js
 
