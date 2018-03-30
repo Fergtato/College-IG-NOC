@@ -1,4 +1,4 @@
-# Normalising Vectors
+# Normalising Vectors
 
 Normalising our vector line between centre and mouse keeping it at a constant length.
 
@@ -10,7 +10,8 @@ Once the vectorLine is created we use the built in P5 function normalize(). This
 vectorLine.normalize();
 ```
 
-We can then multiply then 1 pixel long line using the previously used mult() function. This allows us to set the line to a desired length.
+We can then multiply then 1 pixel long line using the previously used mult() function.  
+This allows us to set the line to a desired length.
 
 ```js
 vectorLine.mult(50);
