@@ -3,7 +3,7 @@ function Mover() {
 	this.location = createVector(width /2, height /2);
 	this.velocity = createVector(0, 0);
 	this.acceleration = p5.Vector.random2D();
-	this.acceleration.mult(0.02);
+	this.acceleration.div(15);
 
 	this.update = function() {
 		this.velocity.add(this.acceleration);
